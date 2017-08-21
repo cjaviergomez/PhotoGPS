@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PhotoGPS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="communicate">Communicate</string>
+    <string name="galeria">Galeria</string>
+    <string name="c_mara">Cámara</string>
+    <string name="mapa">Mapa</string>
+    <string name="contactus">Contact Us</string>
+    <string name="share">Share</string>
+    <string name="nombre_boton">Tomar foto</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button">Fotos</string>
+    <string name="contentDescriptionImagenSet">This is where the picture is going to assign</string>
+    <string name="contentDescriptionButtonImage">This is a button with an image of the galery</string>
+    <string name="fotos">Fotos</string>
+    <string name="photogps">PhotoGPS</string>
+    <string name="universidad_industrial_de_santander">Universidad Industrial de Santander</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
