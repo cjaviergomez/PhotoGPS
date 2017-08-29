@@ -11,8 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,9 +79,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_mapa) {
             fragmento = new MapaFragment();
             fragmentoseleccionado = true;
-            }
+        }
 
-         else if (id == R.id.nav_manage) {
+        else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
 

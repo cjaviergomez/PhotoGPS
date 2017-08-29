@@ -241,13 +241,6 @@ public class CamaraFragment extends Fragment{
 
             // Preparación del archivo para guardar
 
-
-            String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-            final File file = new File(Environment.DIRECTORY_PICTURES+"/"+currentDateTimeString+".jpg");
-
-
-
-
             ImageReader.OnImageAvailableListener readerListener = new ImageReader.OnImageAvailableListener() {
                 @Override
                 public void onImageAvailable(ImageReader reader) {
@@ -271,6 +264,11 @@ public class CamaraFragment extends Fragment{
                 private void save(byte[] bytes) throws IOException {
                     OutputStream output = null;
                     try {
+                        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+                        File folder = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/");
+                        if (!folder.exists()) folder.mkdirs();
+                        file = new File(folder, currentDateTimeString + ".jpg");
+                        file.createNewFile();
                         output = new FileOutputStream(file);
                         output.write(bytes);
                     } finally {
